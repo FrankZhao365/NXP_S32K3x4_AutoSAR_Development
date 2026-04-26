@@ -1,0 +1,15 @@
+﻿26 Apr 2026 14:44:10 - Saving file AdminDataTemplates.xml (D:\NXP_S32K3x4_AutoSAR_Development\Workspace\AutoSAR_Cfg\Config\Developer\AdminDataTemplates.xml)
+26 Apr 2026 14:44:10 - Saving file S32K144_Development.dcf (D:\NXP_S32K3x4_AutoSAR_Development\Workspace\AutoSAR_Cfg\Config\Developer\S32K144_Development.dcf)
+26 Apr 2026 14:44:10 - Start import
+26 Apr 2026 14:44:11 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\Predefines\StandardPackages_AR4.arxml).
+26 Apr 2026 14:44:15 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\Predefines\ServicePortInterfaces_4.3.1.arxml).
+26 Apr 2026 14:44:15 - Importing file (C:\Program Files (x86)\Vector DaVinci Developer 4.6\Bin\Predefines\ApplicationPortInterfaces_4.3.1.arxml).
+26 Apr 2026 14:44:15 - Importing file (D:\NXP_S32K3x4_AutoSAR_Development\Workspace\AutoSAR_Cfg\Config\AUTOSAR\PlatformTypes_AR4.arxml).
+26 Apr 2026 14:44:15 - Merging imported data
+26 Apr 2026 14:44:18 - Finished import
+26 Apr 2026 14:44:19 - Saving file ProfileSettings.xml (D:\NXP_S32K3x4_AutoSAR_Development\Workspace\AutoSAR_Cfg\Config\Developer\ProfileSettings.xml)
+26 Apr 2026 14:44:19 - Saving file Packages.arxml (D:\NXP_S32K3x4_AutoSAR_Development\Workspace\AutoSAR_Cfg\Config\Developer\Packages.arxml)
+26 Apr 2026 14:44:19 - Saving file DataTypes.arxml (D:\NXP_S32K3x4_AutoSAR_Development\Workspace\AutoSAR_Cfg\Config\Developer\DataTypes.arxml)
+26 Apr 2026 14:44:19 - Saving file PortInterfaces.arxml (D:\NXP_S32K3x4_AutoSAR_Development\Workspace\AutoSAR_Cfg\Config\Developer\PortInterfaces.arxml)
+26 Apr 2026 14:44:19 - Saving file S32K144_Development.arxml (D:\NXP_S32K3x4_AutoSAR_Development\Workspace\AutoSAR_Cfg\Config\Developer\ECUProjects\S32K144_Development.arxml)
+26 Apr 2026 14:44:19 - Saving file S32K144_Development.dcf (D:\NXP_S32K3x4_AutoSAR_Development\Workspace\AutoSAR_Cfg\Config\Developer\S32K144_Development.dcf)
