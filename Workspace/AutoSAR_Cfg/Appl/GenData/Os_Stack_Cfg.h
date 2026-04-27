@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Stack_Cfg.h
- *   Generation Time: 2026-04-26 15:19:41
+ *   Generation Time: 2026-04-27 21:37:19
  *           Project: S32K144_Development - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -54,9 +54,9 @@
 # define OS_CFG_SIZE_OSCORE0_INIT_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_ISR_CORE_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_KERNEL_STACK     (1024uL)
-# define OS_CFG_SIZE_OSCORE0_TASK_PRIO0_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_TASK_PRIO100_STACK     (1024uL)
 # define OS_CFG_SIZE_OSCORE0_TASK_PRIO4294967295_STACK     (1024uL)
+# define OS_CFG_SIZE_OSTASK_APP_STACK     (1024uL)
 # define OS_CFG_SIZE_OSTASK_BSW_STACK     (1024uL)
 
 

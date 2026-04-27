@@ -217,5 +217,7 @@
         <AmdGenerateDebugData>false</AmdGenerateDebugData>
         <AutomaticSyncSystemDescription>false</AutomaticSyncSystemDescription>
     </Miscellaneous>
-    <SwctGeneration/>
+    <SwctGeneration>
+        <Component Name="Ct_LEDctrl" GenerationEnabled="true"/>
+    </SwctGeneration>
 </ProjectAssistant>

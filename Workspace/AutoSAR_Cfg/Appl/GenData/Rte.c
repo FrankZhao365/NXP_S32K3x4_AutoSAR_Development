@@ -31,6 +31,7 @@
 #include "Rte_Main.h"
 
 #include "Rte_BswM.h"
+#include "Rte_Ct_LEDctrl.h"
 #include "Rte_Det.h"
 #include "Rte_EcuM.h"
 #include "Rte_Os_OsCore0_swc.h"
@@ -191,11 +192,20 @@ FUNC(Std_ReturnType, RTE_CODE) Rte_Start(void) /* PRQA S 0850 */ /* MD_MSR_19.8 
 
   Rte_ModeMachine_BswM_Switch_ESH_ModeSwitch_BswM_MDGP_ESH_Mode = RTE_MODE_BswM_ESH_Mode_STARTUP;
 
+  /* activate the tasks */
+  (void)ActivateTask(OsTask_APP); /* PRQA S 3417 */ /* MD_Rte_Os */
+
+  /* activate the alarms used for TimingEvents */
+  (void)SetRelAlarm(Rte_Al_TE_Ct_LEDctrl_Ct_LEDctrl_Runnable, RTE_MSEC_SystemTimer(0) + (TickType)1, RTE_MSEC_SystemTimer(10)); /* PRQA S 3417 */ /* MD_Rte_Os */
+
   return RTE_E_OK;
 } /* PRQA S 6050 */ /* MD_MSR_STCAL */
 
 FUNC(Std_ReturnType, RTE_CODE) Rte_Stop(void) /* PRQA S 0850 */ /* MD_MSR_19.8 */
 {
+  /* deactivate alarms */
+  (void)CancelAlarm(Rte_Al_TE_Ct_LEDctrl_Ct_LEDctrl_Runnable); /* PRQA S 3417 */ /* MD_Rte_Os */
+
   return RTE_E_OK;
 }
 
@@ -1103,8 +1113,35 @@ FUNC(BswM_ESH_Mode, RTE_CODE) Rte_Mode_BswM_Notification_ESH_ModeNotification_Bs
  *********************************************************************************************************************/
 
 /**********************************************************************************************************************
+ * Task:     OsTask_APP
+ * Priority: 15
+ * Schedule: NON
+ *********************************************************************************************************************/
+TASK(OsTask_APP) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1 */
+{
+  EventMaskType ev;
+
+
+  /* call runnable */
+  Ct_LEDctrl_Init();
+
+  for(;;)
+  {
+    (void)WaitEvent(Rte_Ev_Run_Ct_LEDctrl_Ct_LEDctrl_Runnable); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)GetEvent(OsTask_APP, &ev); /* PRQA S 3417 */ /* MD_Rte_Os */
+    (void)ClearEvent(ev & (Rte_Ev_Run_Ct_LEDctrl_Ct_LEDctrl_Runnable)); /* PRQA S 3417 */ /* MD_Rte_Os */
+
+    if ((ev & Rte_Ev_Run_Ct_LEDctrl_Ct_LEDctrl_Runnable) != (EventMaskType)0)
+    {
+      /* call runnable */
+      Ct_LEDctrl_Runnable();
+    }
+  }
+} /* PRQA S 6010, 6030, 6050, 6080 */ /* MD_MSR_STPTH, MD_MSR_STCYC, MD_MSR_STCAL, MD_MSR_STMIF */
+
+/**********************************************************************************************************************
  * Task:     OsTask_BSW
- * Priority: 0
+ * Priority: 10
  * Schedule: NON
  *********************************************************************************************************************/
 TASK(OsTask_BSW) /* PRQA S 3408, 1503 */ /* MD_Rte_3408, MD_MSR_14.1 */

@@ -65,6 +65,22 @@
                                   <SHORT-NAME>Det</SHORT-NAME>
                                   <TYPE-TREF DEST="SERVICE-SW-COMPONENT-TYPE">/MICROSAR/Det_swc/ComponentTypes/Det</TYPE-TREF>
                                 </SW-COMPONENT-PROTOTYPE>
+                                <SW-COMPONENT-PROTOTYPE UUID="acb6d524-bd20-4227-9b23-f9aa60b27087">
+                                  <SHORT-NAME>Ct_LEDctrl</SHORT-NAME>
+                                  <ADMIN-DATA>
+                                    <SDGS>
+                                      <SDG GID="DV:DEV">
+                                        <SD GID="DV:ImportModePreset">Keep</SD>
+                                      </SDG>
+                                    </SDGS>
+                                  </ADMIN-DATA>
+                                  <ANNOTATIONS>
+                                    <ANNOTATION>
+                                      <ANNOTATION-ORIGIN>DV:Flattener</ANNOTATION-ORIGIN>
+                                    </ANNOTATION>
+                                  </ANNOTATIONS>
+                                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/Ct_LEDctrl</TYPE-TREF>
+                                </SW-COMPONENT-PROTOTYPE>
                               </COMPONENTS>
                               <CONNECTORS>
                                 <ASSEMBLY-SW-CONNECTOR UUID="6fc32b59-5234-4435-b26c-6f2ae9c36d05">
@@ -106,12 +122,19 @@
                                     <SD GID="60549357-b568-43bc-85a9-55dbaa32630f">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE</SD>
                                     <SD GID="fbb56dde-7a14-429d-871c-7fad8b2d9405">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM</SD>
                                     <SD GID="6fc32b59-5234-4435-b26c-6f2ae9c36d05">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/BswM_Switch_ESH_ModeSwitch_BswM_Notification_ESH_ModeNotification</SD>
+                                    <SD GID="acb6d524-bd20-4227-9b23-f9aa60b27087">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Ct_LEDctrl</SD>
                                     <SD GID="f38aa248-0547-4f99-8f4f-dca5cad1606b">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Det</SD>
                                     <SD GID="137164fb-0039-4487-89e9-8b3fd0aead97">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/EcuM</SD>
                                     <SD GID="b2174b9b-2568-4f8d-8fcc-d3cf772d4a9c">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/COMPOSITIONTYPE/Os_OsCore0_swc</SD>
                                     <SD GID="0392b322-2eb0-4967-b8cc-39aff84163a9">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/FLATMAP</SD>
                                     <SD GID="68bcfea9-9f4f-407e-a699-ee76b76cb7e1">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM</SD>
+                                    <SD GID="3d38f950-9159-4e95-917c-9d56c034ac77">/COM/VECTOR/CFG/WORKFLOW/SYSDESC/SYNC/SYSTEM/COMPOSITIONTYPE</SD>
+                                    <SD GID="D6B7D805-7158-4D5F-93D4-C2681B334BE7">/ComponentTypes/Ct_LEDctrl</SD>
+                                    <SD GID="ABD9B5CA-EF15-43D7-A167-533A8902575A">/ComponentTypes/Ct_LEDctrl/Ct_LEDctrl_InternalBehavior/Ct_LEDctrl_InitEvent</SD>
+                                    <SD GID="23BA54C4-13EE-4125-A2CD-78F9D61E586F">/ComponentTypes/Ct_LEDctrl/Ct_LEDctrl_InternalBehavior/TMT_Ct_LEDctrl_Runnable</SD>
+                                    <SD GID="DE422E73-4CF6-4A5F-B934-91D203B6E9B4">/ComponentTypes/Ct_LEDctrl_Implementation</SD>
                                     <SD GID="C03A8C63-EEDC-4ECB-8FC7-4153E3E85504">/ECUCompositionTypes/ECU_Composition</SD>
+                                    <SD GID="99214D98-D638-4CD0-9537-05A029BC7C05">/ECUCompositionTypes/ECU_Composition/Ct_LEDctrl</SD>
                                     <SD GID="e25d052b-a9d2-490f-b690-0a09c827a093">/MICROSAR/BswM_ib_bswmd</SD>
                                     <SD GID="aea4fb14-af44-4b30-ad84-309b4768c7eb">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions</SD>
                                     <SD GID="f4405cc4-73de-40ef-91fe-2240383c3576">/MICROSAR/BswM_ib_bswmd/BswModuleDescriptions/BswM/BswMBehavior</SD>
@@ -332,6 +355,7 @@
                                     <SD GID="29D8C45D-AD65-4ADB-A8C0-9051D3BA8EB3">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_DS_Defs/E_NOT_OK</SD>
                                     <SD GID="B0DF499C-5446-40C9-BA84-69FE6BBA9AFA">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_AC3_SRBS_Defs/E_NOT_OK</SD>
                                     <SD GID="6C11D3FD-1F97-4F18-9F28-AEBD06095420">/Predefined_DEV/PortInterfaces/NvSWC_NvMService_SRBS/E_NOT_OK</SD>
+                                    <SD GID="412747EB-C781-400B-ABE7-14F4E99B6648">/Systems/S32K144_Development/EcuSwComposition</SD>
                                     <SD GID="1d22454d-cfa1-426f-82fc-ec8abb26dfc3">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior</SD>
                                     <SD GID="b692ee43-f421-4fc6-9dbf-e8029a3e2da4">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_00</SD>
                                     <SD GID="c83ee0d6-bd23-4b7e-89b0-022013c690bc">/TS_T40D2M10I1R0/Dio_ib_bswmd/BswModuleDescriptions/Dio/DioBehavior/DIO_EXCLUSIVE_AREA_01</SD>

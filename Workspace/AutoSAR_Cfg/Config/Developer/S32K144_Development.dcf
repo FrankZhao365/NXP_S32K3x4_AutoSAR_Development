@@ -15,5 +15,10 @@
 	</FILEREF>
 	<FILEREF>
 		<ARXML>ECUProjects/S32K144_Development.arxml</ARXML>
+		<DVG>ECUProjects/S32K144_Development.dvg</DVG>
+	</FILEREF>
+	<FILEREF>
+		<ARXML>ComponentTypes/Ct_LEDctrl.arxml</ARXML>
+		<DVG>ComponentTypes/Ct_LEDctrl.dvg</DVG>
 	</FILEREF>
 </DCF>

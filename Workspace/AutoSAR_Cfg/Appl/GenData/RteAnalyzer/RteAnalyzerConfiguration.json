@@ -564,6 +564,26 @@
             "Source",
             "..",
             "../Components",
+            "../Components/Ct_LEDctrl"
+         ],
+         "SourceFile" : "Source/Ct_LEDctrl.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/9.AutoSAR/1.Vector/SIP/share_20230823/New/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
+            "../Components/TSC_Ct_LEDctrl"
+         ],
+         "SourceFile" : "Source/TSC_Ct_LEDctrl.c"
+      },
+      {
+         "IncludeDirectoryList" : [
+            "D:/9.AutoSAR/1.Vector/SIP/share_20230823/New/AUTOSAR_TOOLs/S32K144_SIP/MICROSAR/CBD1800257_D01_S32K1xx/Misc/RteAnalyzer/include",
+            "Source",
+            "..",
+            "../Components",
             "../Components/TSC_Det"
          ],
          "SourceFile" : "Source/TSC_Det.c"
@@ -615,13 +635,13 @@
       {
          "OsApplication" : "",
          "Preemptive" : "0",
-         "Priority" : "0",
+         "Priority" : "15",
          "TaskName" : "OsTask_APP"
       },
       {
          "OsApplication" : "",
          "Preemptive" : "0",
-         "Priority" : "0",
+         "Priority" : "10",
          "TaskName" : "OsTask_BSW"
       }
    ],

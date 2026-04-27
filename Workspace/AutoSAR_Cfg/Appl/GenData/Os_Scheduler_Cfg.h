@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Scheduler_Cfg.h
- *   Generation Time: 2026-04-26 15:19:41
+ *   Generation Time: 2026-04-27 23:16:41
  *           Project: S32K144_Development - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -45,12 +45,13 @@
  *********************************************************************************************************************/
 
 /*! Defines the number of all task queues. */
-# define OS_CFG_NUM_TASKQUEUES                   (3uL)
+# define OS_CFG_NUM_TASKQUEUES                   (4uL)
 
 /* Number of task queue activation slots: OsCore0 */
 # define OS_CFG_NUM_TASKQUEUE0_OSCORE0_SLOTS     (3uL)
-# define OS_CFG_NUM_TASKQUEUE1_OSCORE0_SLOTS     (4uL)
-# define OS_CFG_NUM_TASKQUEUE2_OSCORE0_SLOTS     (2uL)
+# define OS_CFG_NUM_TASKQUEUE1_OSCORE0_SLOTS     (2uL)
+# define OS_CFG_NUM_TASKQUEUE2_OSCORE0_SLOTS     (3uL)
+# define OS_CFG_NUM_TASKQUEUE3_OSCORE0_SLOTS     (2uL)
 
 
 /**********************************************************************************************************************

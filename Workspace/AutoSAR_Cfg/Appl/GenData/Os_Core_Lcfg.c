@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Core_Lcfg.c
- *   Generation Time: 2026-04-26 15:19:41
+ *   Generation Time: 2026-04-27 21:37:18
  *           Project: S32K144_Development - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -174,9 +174,9 @@ OS_LOCAL CONST(Os_StackConfigRefType, OS_CONST) OsCfg_Core_OsCore0_StackRefs[OS_
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Init,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Isr_Core,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Kernel,
-  (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio0,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio100,
   (Os_StackConfigRefType) &OsCfg_Stack_OsCore0_Task_Prio4294967295,
+  (Os_StackConfigRefType) &OsCfg_Stack_OsTask_APP,
   (Os_StackConfigRefType) &OsCfg_Stack_OsTask_BSW,
   NULL_PTR
 };

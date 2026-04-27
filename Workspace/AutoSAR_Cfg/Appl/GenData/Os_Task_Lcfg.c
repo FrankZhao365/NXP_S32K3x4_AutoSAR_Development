@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Task_Lcfg.c
- *   Generation Time: 2026-04-26 15:19:41
+ *   Generation Time: 2026-04-27 23:16:41
  *           Project: S32K144_Development - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -163,9 +163,9 @@ CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_IdleTask_OsCore0 =
     /* .InitDuringStartUp     = */ TRUE,
     /* .UsesFpu               = */ FALSE
   },
-  /* .HomePriority          = */ 2uL,
+  /* .HomePriority          = */ 3uL,
   /* .TaskId                = */ IdleTask_OsCore0,
-  /* .RunningPriority       = */ 2uL,
+  /* .RunningPriority       = */ 3uL,
   /* .MaxActivations        = */ 1uL,
   /* .AutostartModes        = */ OS_APPMODE_ANY,
   /* .AccessingApplications = */ OS_APPID2MASK(SystemApplication_OsCore0),
@@ -180,7 +180,7 @@ CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_OsTask_APP =
   {
     /* .ContextConfig         = */ &OsCfg_Hal_Context_OsTask_APP,
     /* .Context               = */ &OsCfg_Hal_Context_OsTask_APP_Dyn,
-    /* .Stack                 = */ &OsCfg_Stack_OsCore0_Task_Prio0,
+    /* .Stack                 = */ &OsCfg_Stack_OsTask_APP,
     /* .Dyn                   = */ OS_TASK_CASTDYN_TASK_2_THREAD(OsCfg_Task_OsTask_APP_Dyn),
     /* .OwnerApplication      = */ &OsCfg_App_SystemApplication_OsCore0,
     /* .Core                  = */ &OsCfg_Core_OsCore0,
@@ -201,7 +201,7 @@ CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_OsTask_APP =
   /* .MaxActivations        = */ 1uL,
   /* .AutostartModes        = */ OS_APPMODE_NONE,
   /* .AccessingApplications = */ OS_APPID2MASK(SystemApplication_OsCore0),
-  /* .IsExtended            = */ FALSE,
+  /* .IsExtended            = */ TRUE,
   /* .StackSharing          = */ OS_TASKSCHEDULE_ALLOWED
 };
 
@@ -227,7 +227,7 @@ CONST(Os_TaskConfigType, OS_CONST) OsCfg_Task_OsTask_BSW =
     /* .InitDuringStartUp     = */ TRUE,
     /* .UsesFpu               = */ FALSE
   },
-  /* .HomePriority          = */ 1uL,
+  /* .HomePriority          = */ 2uL,
   /* .TaskId                = */ OsTask_BSW,
   /* .RunningPriority       = */ 0uL,
   /* .MaxActivations        = */ 1uL,

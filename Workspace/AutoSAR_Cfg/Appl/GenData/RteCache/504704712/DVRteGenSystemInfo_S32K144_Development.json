@@ -14,7 +14,7 @@
     "FileName": "",
     "WorkspacePath": "",
     "GeneratorBasePath": "D:\\9.AutoSAR\\1.Vector\\SIP\\share_20230823\\New\\AUTOSAR_TOOLs\\S32K144_SIP\\MICROSAR\\CBD1800257_D01_S32K1xx\\Generators\\Rte\\",
-    "OutputDirectory": "C:\\Users\\Frank\\AppData\\Local\\Temp\\1777187881812-0\\"
+    "OutputDirectory": "C:\\Users\\Frank\\AppData\\Local\\Temp\\1777296722398-0\\"
   },
   "ECUName": "EcuInstance",
   "EnableVFBTracing": false,
@@ -1980,9 +1980,111 @@
     },
     {
       "$id": "122",
-      "ComponentInstanceName": "Det",
+      "ComponentInstanceName": "Ct_LEDctrl",
       "ComponentType": {
         "$id": "123",
+        "ComponentTypeName": "Ct_LEDctrl",
+        "RealizationType": 2,
+        "SupportsMultipleInstances": false,
+        "Description": "",
+        "ImplementationCodeType": 0,
+        "DataLayerLinkList": [
+          null
+        ],
+        "Type": 12,
+        "PerInstanceMemories": [],
+        "Runnables": [
+          {
+            "$id": "124",
+            "RunnableName": "Ct_LEDctrl_Init",
+            "Description": "",
+            "Symbol": "Ct_LEDctrl_Init",
+            "Reentrant": false,
+            "IsInitRunnable": true,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "125",
+                "TriggerType": "InitEvent",
+                "RTEEventList": [
+                  "Ct_LEDctrl_InitEvent"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": []
+          },
+          {
+            "$id": "126",
+            "RunnableName": "Ct_LEDctrl_Runnable",
+            "Description": "",
+            "Symbol": "",
+            "Reentrant": false,
+            "IsInitRunnable": false,
+            "DataLayerLinkList": [
+              null
+            ],
+            "TriggerList": [
+              {
+                "$id": "127",
+                "CycleTime": 10,
+                "CycleTimeUnit": 1,
+                "CyclicTriggerOffset": 0,
+                "CyclicTriggerOffsetUnit": 0,
+                "CyclicTriggerImplementation": 0,
+                "TriggerType": "TimingEvent",
+                "RTEEventList": [
+                  "TMT_Ct_LEDctrl_Runnable"
+                ],
+                "PositionInTask": 0,
+                "UsesSchedule": 0,
+                "BitPosition": 0
+              }
+            ],
+            "DataSendPointList": [],
+            "DataReceivePointList": [],
+            "DataWriteAccessList": [],
+            "DataReadAccessList": [],
+            "ModeSwitchPointList": [],
+            "ModeAccessPointList": [],
+            "ServerCallPointList": [],
+            "ServerReturnPointList": [],
+            "ExclusiveAreaAccessList": [],
+            "InterRunnableVariableAccessList": [],
+            "ExternalTriggeringPointList": []
+          }
+        ],
+        "CalibrationParameters": [],
+        "CalibrationPorts": [],
+        "NvMBlockNeedServiceDependencies": [],
+        "ExclusiveAreas": []
+      },
+      "CTCalibrationSupport": false,
+      "OperationPorts": [],
+      "ModePorts": [],
+      "SignalPorts": [],
+      "CalibrationPorts": [],
+      "TriggerPorts": []
+    },
+    {
+      "$id": "128",
+      "ComponentInstanceName": "Det",
+      "ComponentType": {
+        "$id": "129",
         "ComponentTypeName": "Det",
         "RealizationType": 4,
         "SupportsMultipleInstances": false,
@@ -2007,10 +2109,10 @@
       "TriggerPorts": []
     },
     {
-      "$id": "124",
+      "$id": "130",
       "ComponentInstanceName": "EcuM",
       "ComponentType": {
-        "$id": "125",
+        "$id": "131",
         "ComponentTypeName": "EcuM",
         "RealizationType": 4,
         "SupportsMultipleInstances": false,
@@ -2023,7 +2125,7 @@
         "PerInstanceMemories": [],
         "Runnables": [
           {
-            "$id": "126",
+            "$id": "132",
             "RunnableName": "EcuM_MainFunction",
             "Description": "",
             "Symbol": "EcuM_MainFunction",
@@ -2034,7 +2136,7 @@
             ],
             "TriggerList": [
               {
-                "$id": "127",
+                "$id": "133",
                 "CycleTime": 10,
                 "CycleTimeUnit": 1,
                 "CyclicTriggerOffset": 0,
@@ -2062,7 +2164,7 @@
             "ExternalTriggeringPointList": []
           },
           {
-            "$id": "128",
+            "$id": "134",
             "RunnableName": "GetBootTarget",
             "Description": "",
             "Symbol": "EcuM_GetBootTarget",
@@ -2073,9 +2175,9 @@
             ],
             "TriggerList": [
               {
-                "$id": "129",
+                "$id": "135",
                 "PortOperationRef": {
-                  "$id": "130",
+                  "$id": "136",
                   "PortPrototypeName": "EcuM_BootTarget",
                   "PortPrototypeDescription": "",
                   "PortInterfaceName": "EcuM_BootTarget",
@@ -2088,14 +2190,14 @@
                   "PortDefinedArgumentList": [],
                   "AppErrorList": [
                     {
-                      "$id": "131",
+                      "$id": "137",
                       "ErrorName": "E_NOT_OK",
                       "ErrorCode": 1
                     }
                   ],
                   "ArgumentList": [
                     {
-                      "$id": "132",
+                      "$id": "138",
                       "ArgumentName": "BootTarget",
                       "Direction": 2,
                       "ServerArgumentImplPolicy": 0,
@@ -2133,7 +2235,7 @@
             "ExternalTriggeringPointList": []
           },
           {
-            "$id": "133",
+            "$id": "139",
             "RunnableName": "GetLastShutdownTarget",
             "Description": "",
             "Symbol": "EcuM_GetLastShutdownTarget",
@@ -2144,9 +2246,9 @@
             ],
             "TriggerList": [
               {
-                "$id": "134",
+                "$id": "140",
                 "PortOperationRef": {
-                  "$id": "135",
+                  "$id": "141",
                   "PortPrototypeName": "EcuM_ShutdownTarget",
                   "PortPrototypeDescription": "",
                   "PortInterfaceName": "EcuM_ShutdownTarget",
@@ -2159,14 +2261,14 @@
                   "PortDefinedArgumentList": [],
                   "AppErrorList": [
                     {
-                      "$id": "136",
+                      "$id": "142",
                       "ErrorName": "E_NOT_OK",
                       "ErrorCode": 1
                     }
                   ],
                   "ArgumentList": [
                     {
-                      "$id": "137",
+                      "$id": "143",
                       "ArgumentName": "target",
                       "Direction": 2,
                       "ServerArgumentImplPolicy": 0,
@@ -2175,7 +2277,7 @@
                       }
                     },
                     {
-                      "$id": "138",
+                      "$id": "144",
                       "ArgumentName": "resetSleepMode",
                       "Direction": 2,
                       "ServerArgumentImplPolicy": 0,
@@ -2213,7 +2315,7 @@
             "ExternalTriggeringPointList": []
           },
           {
-            "$id": "139",
+            "$id": "145",
             "RunnableName": "GetShutdownCause",
             "Description": "",
             "Symbol": "EcuM_GetShutdownCause",
@@ -2224,9 +2326,9 @@
             ],
             "TriggerList": [
               {
-                "$id": "140",
+                "$id": "146",
                 "PortOperationRef": {
-                  "$id": "141",
+                  "$id": "147",
                   "PortPrototypeName": "EcuM_ShutdownTarget",
                   "PortPrototypeDescription": "",
                   "PortInterfaceName": "EcuM_ShutdownTarget",
@@ -2239,14 +2341,14 @@
                   "PortDefinedArgumentList": [],
                   "AppErrorList": [
                     {
-                      "$id": "142",
+                      "$id": "148",
                       "ErrorName": "E_NOT_OK",
                       "ErrorCode": 1
                     }
                   ],
                   "ArgumentList": [
                     {
-                      "$id": "143",
+                      "$id": "149",
                       "ArgumentName": "shutdownCause",
                       "Direction": 2,
                       "ServerArgumentImplPolicy": 0,
@@ -2284,7 +2386,7 @@
             "ExternalTriggeringPointList": []
           },
           {
-            "$id": "144",
+            "$id": "150",
             "RunnableName": "GetShutdownTarget",
             "Description": "",
             "Symbol": "EcuM_GetShutdownTarget",
@@ -2295,9 +2397,9 @@
             ],
             "TriggerList": [
               {
-                "$id": "145",
+                "$id": "151",
                 "PortOperationRef": {
-                  "$id": "146",
+                  "$id": "152",
                   "PortPrototypeName": "EcuM_ShutdownTarget",
                   "PortPrototypeDescription": "",
                   "PortInterfaceName": "EcuM_ShutdownTarget",
@@ -2310,14 +2412,14 @@
                   "PortDefinedArgumentList": [],
                   "AppErrorList": [
                     {
-                      "$id": "147",
+                      "$id": "153",
                       "ErrorName": "E_NOT_OK",
                       "ErrorCode": 1
                     }
                   ],
                   "ArgumentList": [
                     {
-                      "$id": "148",
+                      "$id": "154",
                       "ArgumentName": "target",
                       "Direction": 2,
                       "ServerArgumentImplPolicy": 0,
@@ -2326,7 +2428,7 @@
                       }
                     },
                     {
-                      "$id": "149",
+                      "$id": "155",
                       "ArgumentName": "resetSleepMode",
                       "Direction": 2,
                       "ServerArgumentImplPolicy": 0,
@@ -2364,7 +2466,7 @@
             "ExternalTriggeringPointList": []
           },
           {
-            "$id": "150",
+            "$id": "156",
             "RunnableName": "SelectBootTarget",
             "Description": "",
             "Symbol": "EcuM_SelectBootTarget",
@@ -2375,9 +2477,9 @@
             ],
             "TriggerList": [
               {
-                "$id": "151",
+                "$id": "157",
                 "PortOperationRef": {
-                  "$id": "152",
+                  "$id": "158",
                   "PortPrototypeName": "EcuM_BootTarget",
                   "PortPrototypeDescription": "",
                   "PortInterfaceName": "EcuM_BootTarget",
@@ -2390,14 +2492,14 @@
                   "PortDefinedArgumentList": [],
                   "AppErrorList": [
                     {
-                      "$id": "153",
+                      "$id": "159",
                       "ErrorName": "E_NOT_OK",
                       "ErrorCode": 1
                     }
                   ],
                   "ArgumentList": [
                     {
-                      "$id": "154",
+                      "$id": "160",
                       "ArgumentName": "BootTarget",
                       "Direction": 0,
                       "ServerArgumentImplPolicy": 0,
@@ -2435,7 +2537,7 @@
             "ExternalTriggeringPointList": []
           },
           {
-            "$id": "155",
+            "$id": "161",
             "RunnableName": "SelectShutdownCause",
             "Description": "",
             "Symbol": "EcuM_SelectShutdownCause",
@@ -2446,9 +2548,9 @@
             ],
             "TriggerList": [
               {
-                "$id": "156",
+                "$id": "162",
                 "PortOperationRef": {
-                  "$id": "157",
+                  "$id": "163",
                   "PortPrototypeName": "EcuM_ShutdownTarget",
                   "PortPrototypeDescription": "",
                   "PortInterfaceName": "EcuM_ShutdownTarget",
@@ -2461,14 +2563,14 @@
                   "PortDefinedArgumentList": [],
                   "AppErrorList": [
                     {
-                      "$id": "158",
+                      "$id": "164",
                       "ErrorName": "E_NOT_OK",
                       "ErrorCode": 1
                     }
                   ],
                   "ArgumentList": [
                     {
-                      "$id": "159",
+                      "$id": "165",
                       "ArgumentName": "shutdownCause",
                       "Direction": 0,
                       "ServerArgumentImplPolicy": 0,
@@ -2506,7 +2608,7 @@
             "ExternalTriggeringPointList": []
           },
           {
-            "$id": "160",
+            "$id": "166",
             "RunnableName": "SelectShutdownTarget",
             "Description": "",
             "Symbol": "EcuM_SelectShutdownTarget",
@@ -2517,9 +2619,9 @@
             ],
             "TriggerList": [
               {
-                "$id": "161",
+                "$id": "167",
                 "PortOperationRef": {
-                  "$id": "162",
+                  "$id": "168",
                   "PortPrototypeName": "EcuM_ShutdownTarget",
                   "PortPrototypeDescription": "",
                   "PortInterfaceName": "EcuM_ShutdownTarget",
@@ -2532,14 +2634,14 @@
                   "PortDefinedArgumentList": [],
                   "AppErrorList": [
                     {
-                      "$id": "163",
+                      "$id": "169",
                       "ErrorName": "E_NOT_OK",
                       "ErrorCode": 1
                     }
                   ],
                   "ArgumentList": [
                     {
-                      "$id": "164",
+                      "$id": "170",
                       "ArgumentName": "targetState",
                       "Direction": 0,
                       "ServerArgumentImplPolicy": 0,
@@ -2548,7 +2650,7 @@
                       }
                     },
                     {
-                      "$id": "165",
+                      "$id": "171",
                       "ArgumentName": "resetSleepMode",
                       "Direction": 0,
                       "ServerArgumentImplPolicy": 0,
@@ -2594,7 +2696,7 @@
       "CTCalibrationSupport": false,
       "OperationPorts": [
         {
-          "$id": "166",
+          "$id": "172",
           "PortPrototypeName": "EcuM_ShutdownTarget",
           "OperationPrototypeName": "SelectShutdownTarget",
           "ClientPortCount": 0,
@@ -2602,7 +2704,7 @@
           "IsClient": false
         },
         {
-          "$id": "167",
+          "$id": "173",
           "PortPrototypeName": "EcuM_ShutdownTarget",
           "OperationPrototypeName": "SelectShutdownCause",
           "ClientPortCount": 0,
@@ -2610,7 +2712,7 @@
           "IsClient": false
         },
         {
-          "$id": "168",
+          "$id": "174",
           "PortPrototypeName": "EcuM_ShutdownTarget",
           "OperationPrototypeName": "GetShutdownTarget",
           "ClientPortCount": 0,
@@ -2618,7 +2720,7 @@
           "IsClient": false
         },
         {
-          "$id": "169",
+          "$id": "175",
           "PortPrototypeName": "EcuM_ShutdownTarget",
           "OperationPrototypeName": "GetShutdownCause",
           "ClientPortCount": 0,
@@ -2626,7 +2728,7 @@
           "IsClient": false
         },
         {
-          "$id": "170",
+          "$id": "176",
           "PortPrototypeName": "EcuM_ShutdownTarget",
           "OperationPrototypeName": "GetLastShutdownTarget",
           "ClientPortCount": 0,
@@ -2634,7 +2736,7 @@
           "IsClient": false
         },
         {
-          "$id": "171",
+          "$id": "177",
           "PortPrototypeName": "EcuM_BootTarget",
           "OperationPrototypeName": "SelectBootTarget",
           "ClientPortCount": 0,
@@ -2642,7 +2744,7 @@
           "IsClient": false
         },
         {
-          "$id": "172",
+          "$id": "178",
           "PortPrototypeName": "EcuM_BootTarget",
           "OperationPrototypeName": "GetBootTarget",
           "ClientPortCount": 0,
@@ -2656,10 +2758,10 @@
       "TriggerPorts": []
     },
     {
-      "$id": "173",
+      "$id": "179",
       "ComponentInstanceName": "Os_OsCore0_swc",
       "ComponentType": {
-        "$id": "174",
+        "$id": "180",
         "ComponentTypeName": "Os_OsCore0_swc",
         "RealizationType": 4,
         "SupportsMultipleInstances": false,
@@ -2672,7 +2774,7 @@
         "PerInstanceMemories": [],
         "Runnables": [
           {
-            "$id": "175",
+            "$id": "181",
             "RunnableName": "GetCounterValue",
             "Description": "",
             "Symbol": "GetCounterValue",
@@ -2683,9 +2785,9 @@
             ],
             "TriggerList": [
               {
-                "$id": "176",
+                "$id": "182",
                 "PortOperationRef": {
-                  "$id": "177",
+                  "$id": "183",
                   "PortPrototypeName": "OsService_SystemTimer",
                   "PortPrototypeDescription": "",
                   "PortInterfaceName": "Os_Service",
@@ -2697,7 +2799,7 @@
                   "ErrorHandling": 0,
                   "PortDefinedArgumentList": [
                     {
-                      "$id": "178",
+                      "$id": "184",
                       "ID": "OsService_SystemTimer_0",
                       "Value": "SystemTimer",
                       "DataTypeRef": {
@@ -2707,19 +2809,19 @@
                   ],
                   "AppErrorList": [
                     {
-                      "$id": "179",
+                      "$id": "185",
                       "ErrorName": "E_OK",
                       "ErrorCode": 0
                     },
                     {
-                      "$id": "180",
+                      "$id": "186",
                       "ErrorName": "E_OS_ID",
                       "ErrorCode": 3
                     }
                   ],
                   "ArgumentList": [
                     {
-                      "$id": "181",
+                      "$id": "187",
                       "ArgumentName": "Value",
                       "Direction": 2,
                       "ServerArgumentImplPolicy": 0,
@@ -2757,7 +2859,7 @@
             "ExternalTriggeringPointList": []
           },
           {
-            "$id": "182",
+            "$id": "188",
             "RunnableName": "GetElapsedValue",
             "Description": "",
             "Symbol": "GetElapsedValue",
@@ -2768,9 +2870,9 @@
             ],
             "TriggerList": [
               {
-                "$id": "183",
+                "$id": "189",
                 "PortOperationRef": {
-                  "$id": "184",
+                  "$id": "190",
                   "PortPrototypeName": "OsService_SystemTimer",
                   "PortPrototypeDescription": "",
                   "PortInterfaceName": "Os_Service",
@@ -2782,7 +2884,7 @@
                   "ErrorHandling": 0,
                   "PortDefinedArgumentList": [
                     {
-                      "$id": "185",
+                      "$id": "191",
                       "ID": "OsService_SystemTimer_0",
                       "Value": "SystemTimer",
                       "DataTypeRef": {
@@ -2792,24 +2894,24 @@
                   ],
                   "AppErrorList": [
                     {
-                      "$id": "186",
+                      "$id": "192",
                       "ErrorName": "E_OK",
                       "ErrorCode": 0
                     },
                     {
-                      "$id": "187",
+                      "$id": "193",
                       "ErrorName": "E_OS_ID",
                       "ErrorCode": 3
                     },
                     {
-                      "$id": "188",
+                      "$id": "194",
                       "ErrorName": "E_OS_VALUE",
                       "ErrorCode": 8
                     }
                   ],
                   "ArgumentList": [
                     {
-                      "$id": "189",
+                      "$id": "195",
                       "ArgumentName": "Value",
                       "Direction": 1,
                       "ServerArgumentImplPolicy": 0,
@@ -2818,7 +2920,7 @@
                       }
                     },
                     {
-                      "$id": "190",
+                      "$id": "196",
                       "ArgumentName": "ElapsedValue",
                       "Direction": 2,
                       "ServerArgumentImplPolicy": 0,
@@ -2864,7 +2966,7 @@
       "CTCalibrationSupport": false,
       "OperationPorts": [
         {
-          "$id": "191",
+          "$id": "197",
           "PortPrototypeName": "OsService_SystemTimer",
           "OperationPrototypeName": "GetElapsedValue",
           "ClientPortCount": 0,
@@ -2872,7 +2974,7 @@
           "IsClient": false
         },
         {
-          "$id": "192",
+          "$id": "198",
           "PortPrototypeName": "OsService_SystemTimer",
           "OperationPrototypeName": "GetCounterValue",
           "ClientPortCount": 0,
@@ -2887,7 +2989,7 @@
     }
   ],
   "LdComPduTable": {
-    "$id": "193"
+    "$id": "199"
   },
   "IsAUTOSAR3Rte": false,
   "Type": 8,

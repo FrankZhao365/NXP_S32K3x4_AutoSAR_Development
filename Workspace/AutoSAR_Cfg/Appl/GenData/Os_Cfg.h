@@ -21,7 +21,7 @@
  *  FILE DESCRIPTION
  *  -------------------------------------------------------------------------------------------------------------------
  *              File: Os_Cfg.h
- *   Generation Time: 2026-04-26 15:19:41
+ *   Generation Time: 2026-04-27 21:37:18
  *           Project: S32K144_Development - Version 1.0
  *          Delivery: CBD1800257_D01
  *      Tool Version: DaVinci Configurator  5.18.37 SP1
@@ -106,6 +106,7 @@
 
 /* Event masks */
 # define Rte_Ev_Cyclic2_OsTask_BSW_0_10ms     ((EventMaskType)1ULL)
+# define Rte_Ev_Run_Ct_LEDctrl_Ct_LEDctrl_Runnable     ((EventMaskType)1ULL)
 
 /* Software counter timing macros */
 

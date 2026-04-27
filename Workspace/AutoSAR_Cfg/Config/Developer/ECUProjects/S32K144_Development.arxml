@@ -7,6 +7,19 @@
       <ELEMENTS>
         <COMPOSITION-SW-COMPONENT-TYPE UUID="C03A8C63-EEDC-4ECB-8FC7-4153E3E85504">
           <SHORT-NAME>ECU_Composition</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="99214D98-D638-4CD0-9537-05A029BC7C05">
+              <SHORT-NAME>Ct_LEDctrl</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="DV:DEV">
+                    <SD GID="DV:ImportModePreset">Keep</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/ComponentTypes/Ct_LEDctrl</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
         </COMPOSITION-SW-COMPONENT-TYPE>
       </ELEMENTS>
     </AR-PACKAGE>

@@ -36,6 +36,10 @@
  *  Rte_ReadHook_BswM_Request_ESH_RunRequest_1_requestedMode_Start
  *  Rte_Runnable_BswM_BswM_MainFunction_Return
  *  Rte_Runnable_BswM_BswM_MainFunction_Start
+ *  Rte_Runnable_Ct_LEDctrl_Ct_LEDctrl_Init_Return
+ *  Rte_Runnable_Ct_LEDctrl_Ct_LEDctrl_Init_Start
+ *  Rte_Runnable_Ct_LEDctrl_Ct_LEDctrl_Runnable_Return
+ *  Rte_Runnable_Ct_LEDctrl_Ct_LEDctrl_Runnable_Start
  *  Rte_Runnable_EcuM_EcuM_MainFunction_Return
  *  Rte_Runnable_EcuM_EcuM_MainFunction_Start
  *  Rte_Runnable_EcuM_GetBootTarget_Return
